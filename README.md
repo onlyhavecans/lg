@@ -1,4 +1,4 @@
-# Day One Logger
+# lg (Log to DayOne)
 
 This is a port of [Brett Terpstra's ruby script](https://brettterpstra.com/2012/01/16/logging-with-day-one-geek-style/) to golang.
 
@@ -12,7 +12,7 @@ beginning to parse natural language dates
 Requires golang to build!
 ```
 brew install golang
-go get onlyhavecans.works/amy/dayonelogger
+go get onlyhavecans.works/amy/lg
 ```
 
 If you would like to start posting pre-built binaries tweet me at @onlyhavecans
@@ -20,17 +20,15 @@ If you would like to start posting pre-built binaries tweet me at @onlyhavecans
 ## Example usage:
 
 ```shell script
-dayonelogger "This is a entry."
-dayonelogger "[yesterday 3pm] Something I did yesterday at 3:00PM"
-dayonelogger "[1 hour ago] something I did an hour ago"
+lg "This is a entry."
+lg "[yesterday 3pm] Something I did yesterday at 3:00PM"
+lg "[1 hour ago] something I did an hour ago"
 ```
-
-I highly recommend you alias the ap to something shorter or rename the binary if you like to something short like "lg" 
 
 I primarily use this as an alfred extension using the following applescript. You may need to adjust your path to the script
 
 ```applescript
 on alfred_script(q)
-    do shell script "~/go/bin/dayonelogger \"" & q & "\""
+    do shell script "~/go/bin/lg \"" & q & "\""
 end alfred_script
 ```

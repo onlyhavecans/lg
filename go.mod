@@ -1,4 +1,4 @@
-module onlyhavecans.works/amy/dayonelogger
+module onlyhavecans.works/amy/lg
 
 go 1.15
 
