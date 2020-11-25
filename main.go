@@ -16,7 +16,6 @@ import (
 )
 
 /*
-logtodayone
 Based on the ruby version by Brett Terpstra (http://brettterpstra.com)
 Use and modify freely, attribution appreciated
 
@@ -25,8 +24,8 @@ It parses an input string for a [date string] at the
 beginning to parse natural language dates
 
 Example usage:
-logtodayone "This is a entry."
-logtodayone "[yesterday 3pm] Something I did yesterday at 3:00PM"
+dayonelogger "This is a entry."
+dayonelogger "[yesterday 3pm] Something I did yesterday at 3:00PM"
 */
 
 const (
