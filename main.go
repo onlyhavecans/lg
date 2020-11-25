@@ -24,8 +24,8 @@ It parses an input string for a [date string] at the
 beginning to parse natural language dates
 
 Example usage:
-dayonelogger "This is a entry."
-dayonelogger "[yesterday 3pm] Something I did yesterday at 3:00PM"
+lg "This is a entry."
+lg "[yesterday 3pm] Something I did yesterday at 3:00PM"
 */
 
 const (
@@ -62,7 +62,7 @@ func (d *DayOne) Log(date time.Time, message string) error {
 
 	outString := strings.TrimSpace(string(out[:]))
 
-	fmt.Fprintf(d.stdout, "%s\n", outString)
+	_, _ = fmt.Fprintf(d.stdout, "%s\n", outString)
 
 	return nil
 }
