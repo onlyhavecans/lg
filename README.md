@@ -25,7 +25,9 @@ dayonelogger "[yesterday 3pm] Something I did yesterday at 3:00PM"
 dayonelogger "[1 hour ago] something I did an hour ago"
 ```
 
-I highly recommend you rename the binary if you like to something short like "lg" or script this into alfred using the following applescript
+I highly recommend you alias the ap to something shorter or rename the binary if you like to something short like "lg" 
+
+I primarily use this as an alfred extension using the following applescript. You may need to adjust your path to the script
 
 ```applescript
 on alfred_script(q)
