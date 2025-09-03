@@ -1,4 +1,4 @@
-module github.com/onlyhavecans/dayonelogger
+module onlyhavecans.works/tools/lg
 
 go 1.20
 
