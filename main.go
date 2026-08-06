@@ -60,7 +60,7 @@ func (d *DayOne) Log(date time.Time, message string) error {
 		return err
 	}
 
-	outString := strings.TrimSpace(string(out[:]))
+	outString := strings.TrimSpace(string(out))
 
 	_, _ = fmt.Fprintf(d.stdout, "%s\n", outString)
 
@@ -74,7 +74,6 @@ func main() {
 		_, _ = fmt.Fprintf(os.Stderr, "%v\n", err)
 		os.Exit(exitFail)
 	}
-
 }
 
 func run(args []string, dayOne DayOne) error {
