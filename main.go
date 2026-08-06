@@ -68,6 +68,7 @@ func (d *DayOne) Log(date time.Time, message string) error {
 }
 
 func main() {
+	maybePrintVersion()
 	dayOne := DayOne{}
 
 	if err := run(os.Args, dayOne); err != nil {
