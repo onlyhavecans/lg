@@ -2,7 +2,7 @@ module onlyhavecans.works/tools/lg
 
 go 1.26
 
-toolchain go1.26.5
+toolchain go1.26.6
 
 require github.com/olebedev/when v1.1.0
 
